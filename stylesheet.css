@@ -1,0 +1,14 @@
+.carousel {
+    background-color:cadetblue;
+    height: 100vh;
+}
+
+.card {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    margin-top: 100px;
+}
+
+h3 {
+    text-align: center
+}
