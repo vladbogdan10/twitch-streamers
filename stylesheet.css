@@ -1,14 +1,53 @@
-.carousel {
-    background-color:cadetblue;
-    height: 100vh;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #151515;
+}
+
+#carouselExampleControls {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: fixed;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px;
+    color: white;
+}
+
 
 .card {
-    margin: 0 auto;
-    background-color: antiquewhite;
-    margin-top: 100px;
+    margin-bottom: 20px;
+    border: none;
+    height: 120px;
+    background-color:darkslateblue;
+    color: white;
 }
 
-h3 {
-    text-align: center
+img {
+    width: 120px;
+    border-radius: 4px;
 }
+
+h5 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.online {
+    box-shadow: 0 0 12px chartreuse;
+}
+
+
