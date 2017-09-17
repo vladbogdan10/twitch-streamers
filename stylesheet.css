@@ -11,28 +11,46 @@ body {
     width: 100%;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     position: fixed;
+    margin-top: -60px;
 }
 
-h2 {
+.header {
     text-align: center;
     margin: 40px;
-    color: white;
+    margin-bottom: 40px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 6px;
 }
 
+#header-1 {
+    color: coral;
+    border: 1px solid rgba(255, 127, 80, 0.8);
+}
+
+#header-2 {
+    color: #4EE35C;
+    border: 1px solid rgba(78, 227, 92, 0.8);
+}
+
+#header-3 {
+    color: crimson;
+    border: 1px solid rgba(202, 20, 60, 0.8);
+}
+
+.container {
+    margin-bottom: 80px;
+}
 
 .card {
     margin-bottom: 20px;
     border: none;
     height: 120px;
-    background-color:darkslateblue;
+    background-color: darkslateblue;
     color: white;
-}
-
-img {
-    width: 120px;
-    border-radius: 4px;
 }
 
 h5 {
@@ -40,14 +58,42 @@ h5 {
     padding-top: 10px;
 }
 
-p {
+.card p {
     text-align: center;
     font-weight: 100;
     font-size: 13px;
 }
 
-.online {
-    box-shadow: 0 0 12px chartreuse;
+.status {
+    background-color: lawngreen;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    margin: 6px;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #1E1E1E;
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid rgba(255, 127, 80, 0.8);
+    color: coral;
+}
 
+.footer-icons {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 30px;
+}
+
+footer p {
+    display: inline-block;
+    margin: 12px;
+    font-size: 14px;
+}
