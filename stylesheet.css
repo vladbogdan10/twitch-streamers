@@ -53,6 +53,7 @@ body {
 }
 
 .card {
+    color: #FFF4FC;
     margin-bottom: 20px;
     border: none;
     height: 120px;
@@ -64,19 +65,19 @@ body {
     background: -ms-linear-gradient(top, rgba(79,70,148,1) 0%, rgba(60,55,117,1) 100%);
     background: linear-gradient(to bottom, rgba(79,70,148,1) 0%, rgba(60,55,117,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4694', endColorstr='#3c3775', GradientType=0 );
-    color: gainsboro;
 }
 
 .channel-info {
-    padding-top: 3%;
+    padding-top: 10px;
     font-size: 14px;
-    font-weight: 200;
     text-shadow: 1px 1px #303030;
+    padding-left: 70px;
 }
 
 .channel-info span {
     font-size: 18px;
     font-weight: 600;
+    color: #FEBCC2;
 }
 
 .status {
@@ -88,7 +89,7 @@ body {
     margin: 6px;
 }
 
-footer {
+#footer {
     position: fixed;
     bottom: 0;
     background-color: #1E1E1E;
@@ -96,8 +97,6 @@ footer {
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
-    color: coral;
     background: rgba(36,36,36,1);
     background: -moz-linear-gradient(top, rgba(36,36,36,1) 0%, rgba(26,26,26,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(36,36,36,1)), color-stop(100%, rgba(26,26,26,1)));
@@ -115,13 +114,50 @@ footer {
     font-size: 30px;
 }
 
+.footer-orange {
+    border-top: 1px solid rgba(255, 127, 80, 0.4);
+    color: coral;
+}
+
+.footer-green {
+    color: #4EE35C;
+    border-top: 1px solid rgba(78, 227, 92, 0.4);
+}
+
+.footer-red {
+    color: crimson;
+    border-top: 1px solid rgba(202, 20, 60, 0.4);
+}
+
 .footer-icons i:hover {
-    color: #FF672F;
+    opacity: 0.8;
+}
+
+.footer-icons a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 footer p {
     display: inline-block;
     margin: 12px;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+    .channel-info {
+        margin-top: -5px;
+        font-size: 13px;
+        text-shadow: 1px 1px #303030;
+        padding-left: 85px;
+}
+
+    .channel-info span {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 

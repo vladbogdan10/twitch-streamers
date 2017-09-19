@@ -17,7 +17,7 @@
 <body>
     <div id="carouselExampleControls" class="carousel slide" data-interval="false">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" id="page-1">
                 <div class="header" id="header-1">
                     <h2>Streamers</h2>
                 </div>
@@ -47,118 +47,38 @@
                                         <img src="twitch-logo.png" class="rounded" style="width: 120px;">
                                     </div>
                                     <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
+                                        <p><span>Channel:</span>&nbsp; Currently not streaming...</p>
                                         <p><span>Game:</span>&nbsp; Super Mario Bros</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="status" id="offline" style="background-color: crimson;"></div>
-                                        <img src="twitch-logo.png" class="rounded" style="width: 120px;">
-                                    </div>
-                                    <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
-                                        <p><span>Game:</span>&nbsp; Super Mario Bros</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="status" id="offline" style="background-color: crimson;"></div>
-                                        <img src="twitch-logo.png" class="rounded" style="width: 120px;">
-                                    </div>
-                                    <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
-                                        <p><span>Game:</span>&nbsp; Super Mario Bros</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="status" id="offline" style="background-color: crimson;"></div>
-                                        <img src="twitch-logo.png" class="rounded" style="width: 120px;">
-                                    </div>
-                                    <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
-                                        <p><span>Game:</span>&nbsp; Super Mario Bros</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="status" id="online" style="background-color: lawngreen;"></div>
-                                        <img src="https://pbs.twimg.com/media/CcIacQKUAAACXuB.jpg" class="rounded" style="width: 120px;">
-                                    </div>
-                                    <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
-                                        <p><span>Game:</span>&nbsp; Super Mario Bros</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="status" id="offline" style="background-color: crimson;"></div>
-                                        <img src="twitch-logo.png" class="rounded" style="width: 120px;">
-                                    </div>
-                                    <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
-                                        <p><span>Game:</span>&nbsp; Super Mario Bros</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="status" id="offline" style="background-color: crimson;"></div>
-                                        <img src="twitch-logo.png" class="rounded" style="width: 120px;">
-                                    </div>
-                                    <div class="col-8 channel-info">
-                                        <p><span>Channel:</span>&nbsp; Currently I'm not streaming</p>
-                                        <p><span>Game:</span>&nbsp; Super Mario Bros</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                               
                         -->
                         
                     </div>
                 </div>
             </div>
-            
 
-            <div class="carousel-item">
+            <div class="carousel-item" id="page-2">
                 <div class="header" id="header-2">
                     <h2>Online</h2>
                 </div>
+                <div class="container">
+                    <div class="row" id="online-cards">
+
+                    </div>
+                </div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" id="page-3">
                 <div class="header" id="header-3">
                     <h2>Offline</h2>
+                </div>
+                <div class="container">
+                    <div class="row" id="offline-cards">
+
+                    </div>
                 </div>
             </div>
 
@@ -173,14 +93,14 @@
         </a>
     </div>
 
-    <footer>
+    <footer id="footer" class="footer-orange">
         <p><strong>Twitch Streamers</strong> by VladB.</p>
         <div class="footer-icons">
-            <a href="https://twitter.com/_vladbogdan" target="_blank" style="color: coral"><i class="fa fa-twitter social-icons" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/_vladbogdan" target="_blank"><i class="fa fa-twitter social-icons" aria-hidden="true"></i></a>
 
-            <a href="https://github.com/vladbogdan10" target="_blank" style="color: coral"><i class="fa fa-github social-icons" aria-hidden="true"></i></a>
+            <a href="https://github.com/vladbogdan10" target="_blank"><i class="fa fa-github social-icons" aria-hidden="true"></i></a>
 
-            <a href="https://www.linkedin.com/in/vlad-bogdan" target="_blank" style="color: coral"><i class="fa fa-linkedin-square social-icons" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/vlad-bogdan" target="_blank"><i class="fa fa-linkedin-square social-icons" aria-hidden="true"></i></a>
         </div>
     </footer>
 
